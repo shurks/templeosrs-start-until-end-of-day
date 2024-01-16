@@ -1,0 +1,20 @@
+<html>
+        <head>
+        </head>
+        <body>
+                <script type="text/javascript">
+                        // Function to format date as yyyy-mm-dd
+                        function formatDate(date) {
+                                var yyyy = date.getFullYear();
+                                var mm = String(date.getMonth() + 1).padStart(2, '0'); // Adding 1 because months are zero-indexed
+                                var dd = String(date.getDate()).padStart(2, '0');
+                                return yyyy + '-' + mm + '-' + dd;
+                        }
+                        const name = window.location.pathname.substring(1) || 'lijk'
+                        const date = new Date()
+                        date.setDate(date.getDate() + 1)
+                        const url = `https://templeosrs.com/player/overview.php?player=${name}&duration=1day&date=${formatDate(date)}%2006:00:00&skill=Ehp`
+                        window.location = url
+                </script>
+        </body>
+</html>
