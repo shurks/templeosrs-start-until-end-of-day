@@ -1,0 +1,2 @@
+# TempleOSRS start until end of day
+Apache2 configuration that redirects day.templeosrs.com/rsn to the their temple page filtered on "EHP" going from 6AM that morning until 6AM the day after, using client-side timezone of the browser.

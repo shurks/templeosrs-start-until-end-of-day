@@ -1,7 +1,7 @@
 # Enable mod_rewrite
 RewriteEngine On
 
-# Rewrite requests to day.hurx.io to /var/www/html/day.html
-RewriteCond %{HTTP_HOST} ^day\.hurx\.io$
+# Rewrite requests to day.templeosrs.com to /var/www/html/day.html
+RewriteCond %{HTTP_HOST} ^day\.templeosrs\.com$
 RewriteCond %{REQUEST_URI} !^day.html
 RewriteRule ^(.*)$ day.html [L]
