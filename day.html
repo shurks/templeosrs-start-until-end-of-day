@@ -12,7 +12,9 @@
                         }
                         const name = window.location.pathname.substring(1) || 'lijk'
                         const date = new Date()
-                        date.setDate(date.getDate() + 1)
+                        if (date.getHours() >= 6) {
+                                date.setDate(date.getDate() + 1)
+                        }
                         const url = `https://templeosrs.com/player/overview.php?player=${name}&duration=1day&date=${formatDate(date)}%2006:00:00&skill=Ehp`
                         window.location = url
                 </script>
